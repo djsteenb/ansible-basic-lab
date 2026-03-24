@@ -1,0 +1,398 @@
+(.venv) work6@student:~/git/ansible-basic-lab$ ansible-inventory -i inventory.azure_rm.yml --graph
+
+@all:
+  |--@ungrouped:
+  |--@tag_owner_work1:
+  |  |--server1
+  |  |--server2
+  |  |--server3
+  |  |--server4
+  |  |--server5
+  |  |--student
+  |--@tag_ansible_work1:
+  |  |--server1
+  |  |--server2
+  |  |--server3
+  |  |--server4
+  |  |--server5
+  |  |--student
+  |--@tag_type_server1_work1:
+  |  |--server1
+  |--@location_northeurope:
+  |  |--server1
+  |  |--server2
+  |  |--server3
+  |  |--server4
+  |  |--server5
+  |  |--student
+  |--@os_linux:
+  |  |--server1
+  |  |--server2
+  |  |--server3
+  |  |--server4
+  |--@tag_type_server2_work1:
+  |  |--server2
+  |--@tag_type_server3_work1:
+  |  |--server3
+  |--@tag_type_server4_work1:
+  |  |--server4
+  |--@tag_type_server5_work1:
+  |  |--server5
+  |--@os_windows:
+  |  |--server5
+  |  |--student
+  |--@tag_type_student_work1:
+  |  |--student
+  |--@tag_owner_work10:
+  |  |--server1
+  |  |--server2
+  |  |--server3
+  |  |--server4
+  |  |--server5
+  |  |--student
+  |--@tag_ansible_work10:
+  |  |--server1
+  |  |--server2
+  |  |--server3
+  |  |--server4
+  |  |--server5
+  |  |--student
+  |--@tag_type_server1_work10:
+  |  |--server1
+  |--@tag_type_server2_work10:
+  |  |--server2
+  |--@tag_type_server3_work10:
+  |  |--server3
+  |--@tag_type_server4_work10:
+  |  |--server4
+  |--@tag_role_work10_awx:
+  |  |--server4
+  |--@tag_type_server5_work10:
+  |  |--server5
+  |--@tag_type_student_work10:
+  |  |--student
+  |--@tag_owner_work11:
+  |  |--server1
+  |  |--server2
+  |  |--server3
+  |  |--server4
+  |  |--server5
+  |  |--student
+  |--@tag_ansible_work11:
+  |  |--server1
+  |  |--server2
+  |  |--server3
+  |  |--server4
+  |  |--server5
+  |  |--student
+  |--@tag_type_server1_work11:
+  |  |--server1
+  |--@tag_type_server2_work11:
+  |  |--server2
+  |--@tag_type_server3_work11:
+  |  |--server3
+  |--@tag_type_server4_work11:
+  |  |--server4
+  |--@tag_role_work11_awx:
+  |  |--server4
+  |--@tag_type_server5_work11:
+  |  |--server5
+  |--@tag_type_student_work11:
+  |  |--student
+  |--@tag_owner_work12:
+  |  |--server1
+  |  |--server2
+  |  |--server3
+  |  |--server4
+  |  |--server5
+  |  |--student
+  |--@tag_ansible_work12:
+  |  |--server1
+  |  |--server2
+  |  |--server3
+  |  |--server4
+  |  |--server5
+  |  |--student
+  |--@tag_type_server1_work12:
+  |  |--server1
+  |--@tag_type_server2_work12:
+  |  |--server2
+  |--@tag_type_server3_work12:
+  |  |--server3
+  |--@tag_type_server4_work12:
+  |  |--server4
+  |--@tag_role_work12_awx:
+  |  |--server4
+  |--@tag_type_server5_work12:
+  |  |--server5
+  |--@tag_type_student_work12:
+  |  |--student
+  |--@tag_owner_work13:
+  |  |--server1
+  |  |--server2
+  |  |--server3
+  |  |--server4
+  |  |--server5
+  |  |--student
+  |--@tag_ansible_work13:
+  |  |--server1
+  |  |--server2
+  |  |--server3
+  |  |--server4
+  |  |--server5
+  |  |--student
+  |--@tag_type_server1_work13:
+  |  |--server1
+  |--@tag_type_server2_work13:
+  |  |--server2
+  |--@tag_type_server3_work13:
+  |  |--server3
+  |--@tag_type_server4_work13:
+  |  |--server4
+  |--@tag_type_server5_work13:
+  |  |--server5
+  |--@tag_type_student_work13:
+  |  |--student
+  |--@tag_owner_work14:
+  |  |--server1
+  |  |--server2
+  |  |--server3
+  |  |--server4
+  |  |--server5
+  |--@tag_ansible_work14:
+  |  |--server1
+  |  |--server2
+  |  |--server3
+  |  |--server4
+  |  |--server5
+  |--@tag_type_server1_work14:
+  |  |--server1
+  |--@tag_type_server2_work14:
+  |  |--server2
+  |--@tag_type_server3_work14:
+  |  |--server3
+  |--@tag_type_server4_work14:
+  |  |--server4
+  |--@tag_type_server5_work14:
+  |  |--server5
+  |--@tag_owner_work2:
+  |  |--server1
+  |  |--server2
+  |  |--server3
+  |  |--server4
+  |  |--server5
+  |  |--student
+  |--@tag_ansible_work2:
+  |  |--server1
+  |  |--server2
+  |  |--server3
+  |  |--server4
+  |  |--server5
+  |  |--student
+  |--@tag_type_server1_work2:
+  |  |--server1
+  |--@tag_type_server2_work2:
+  |  |--server2
+  |--@tag_type_server3_work2:
+  |  |--server3
+  |--@tag_type_server4_work2:
+  |  |--server4
+  |--@tag_type_server5_work2:
+  |  |--server5
+  |--@tag_type_student_work2:
+  |  |--student
+  |--@tag_owner_work3:
+  |  |--server1
+  |  |--server2
+  |  |--server3
+  |  |--server4
+  |  |--server5
+  |  |--student
+  |--@tag_ansible_work3:
+  |  |--server1
+  |  |--server2
+  |  |--server3
+  |  |--server4
+  |  |--server5
+  |  |--student
+  |--@tag_type_server1_work3:
+  |  |--server1
+  |--@tag_type_server2_work3:
+  |  |--server2
+  |--@tag_type_server3_work3:
+  |  |--server3
+  |--@tag_type_server4_work3:
+  |  |--server4
+  |--@tag_role_work3_awx:
+  |  |--server4
+  |--@tag_type_server5_work3:
+  |  |--server5
+  |--@tag_type_student_work3:
+  |  |--student
+  |--@tag_owner_work4:
+  |  |--server1
+  |  |--server2
+  |  |--server3
+  |  |--server4
+  |  |--server5
+  |  |--student
+  |--@tag_ansible_work4:
+  |  |--server1
+  |  |--server2
+  |  |--server3
+  |  |--server4
+  |  |--server5
+  |  |--student
+  |--@tag_type_server1_work4:
+  |  |--server1
+  |--@tag_type_server2_work4:
+  |  |--server2
+  |--@tag_type_server3_work4:
+  |  |--server3
+  |--@tag_type_server4_work4:
+  |  |--server4
+  |--@tag_type_server5_work4:
+  |  |--server5
+  |--@tag_type_student_work4:
+  |  |--student
+  |--@tag_owner_work5:
+  |  |--server1
+  |  |--server2
+  |  |--server3
+  |  |--server4
+  |  |--server5
+  |  |--student
+  |--@tag_ansible_work5:
+  |  |--server1
+  |  |--server2
+  |  |--server3
+  |  |--server4
+  |  |--server5
+  |  |--student
+  |--@tag_type_server1_work5:
+  |  |--server1
+  |--@tag_type_server2_work5:
+  |  |--server2
+  |--@tag_type_server3_work5:
+  |  |--server3
+  |--@tag_type_server4_work5:
+  |  |--server4
+  |--@tag_role_work5_awx:
+  |  |--server4
+  |--@tag_type_server5_work5:
+  |  |--server5
+  |--@tag_type_student_work5:
+  |  |--student
+  |--@tag_owner_work6:
+  |  |--server1
+  |  |--server2
+  |  |--server3
+  |  |--server4
+  |  |--server5
+  |  |--student
+  |--@tag_ansible_work6:
+  |  |--server1
+  |  |--server2
+  |  |--server3
+  |  |--server4
+  |  |--server5
+  |  |--student
+  |--@tag_type_server1_work6:
+  |  |--server1
+  |--@tag_type_server2_work6:
+  |  |--server2
+  |--@tag_type_server3_work6:
+  |  |--server3
+  |--@tag_type_server4_work6:
+  |  |--server4
+  |--@tag_role_work6_awx:
+  |  |--server4
+  |--@tag_type_server5_work6:
+  |  |--server5
+  |--@tag_type_student_work6:
+  |  |--student
+  |--@tag_owner_work7:
+  |  |--server1
+  |  |--server2
+  |  |--server3
+  |  |--server4
+  |  |--server5
+  |  |--student
+  |--@tag_ansible_work7:
+  |  |--server1
+  |  |--server2
+  |  |--server3
+  |  |--server4
+  |  |--server5
+  |  |--student
+  |--@tag_type_server1_work7:
+  |  |--server1
+  |--@tag_type_server2_work7:
+  |  |--server2
+  |--@tag_type_server3_work7:
+  |  |--server3
+  |--@tag_type_server4_work7:
+  |  |--server4
+  |--@tag_role_work7_awx:
+  |  |--server4
+  |--@tag_type_server5_work7:
+  |  |--server5
+  |--@tag_type_student_work7:
+  |  |--student
+  |--@tag_owner_work8:
+  |  |--server1
+  |  |--server2
+  |  |--server3
+  |  |--server4
+  |  |--server5
+  |  |--student
+  |--@tag_ansible_work8:
+  |  |--server1
+  |  |--server2
+  |  |--server3
+  |  |--server4
+  |  |--server5
+  |  |--student
+  |--@tag_type_server1_work8:
+  |  |--server1
+  |--@tag_type_server2_work8:
+  |  |--server2
+  |--@tag_type_server3_work8:
+  |  |--server3
+  |--@tag_type_server4_work8:
+  |  |--server4
+  |--@tag_role_work8_awx:
+  |  |--server4
+  |--@tag_type_server5_work8:
+  |  |--server5
+  |--@tag_type_student_work8:
+  |  |--student
+  |--@tag_owner_work9:
+  |  |--server1
+  |  |--server2
+  |  |--server3
+  |  |--server4
+  |  |--server5
+  |  |--student
+  |--@tag_ansible_work9:
+  |  |--server1
+  |  |--server2
+  |  |--server3
+  |  |--server4
+  |  |--server5
+  |  |--student
+  |--@tag_type_server1_work9:
+  |  |--server1
+  |--@tag_type_server2_work9:
+  |  |--server2
+  |--@tag_type_server3_work9:
+  |  |--server3
+  |--@tag_type_server4_work9:
+  |  |--server4
+  |--@tag_role_work9_awx:
+  |  |--server4
+  |--@tag_type_server5_work9:
+  |  |--server5
+  |--@tag_type_student_work9:
+  |  |--student
+(.venv) work6@student:~/git/ansible-basic-lab$

@@ -1,0 +1,21 @@
+---
+- name: Install httpd with become
+  hosts: servers
+  become: true
+  vars:
+    apache_name: httpd
+
+  tasks:
+    - name: Show Distribution
+      ansible.builtin.debug:
+        var: ansible_facts['distribution']
+
+    - name: Change apache_name when not redhat
+      ansible.builtin.set_fact:
+        apache_name: apache2
+      when: ansible_facts['distribution'] == "Ubuntu"
+
+    - name: Install Apache
+      ansible.builtin.package:
+        name: "{{ apache_name }}"
+        state: present
